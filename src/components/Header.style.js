@@ -14,12 +14,11 @@ export const Nav = styled.nav`
   align-self: center;
 `;
 
-export const NavLinkWrap = styled.div`
-  a {
-    text-decoration: none;
-    color: #636363;
-    font-size: 16px
-  }
+export const NavLink = styled(Link)`
+  text-decoration: none;
+  color: #636363;
+  font-size: 16px;
+  display: inline-block;
   margin-left: 26px;
 `;
 
