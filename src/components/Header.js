@@ -1,26 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 import { ReactComponent as Logo } from './logo.svg';
-import {
-  HeaderStyled, Nav, NavLinkWrap, LogoLink,
-} from './Header.style';
+
+const HeaderStyled = styled.header`
+  padding: 0 80px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+`;
+
+const Nav = styled.nav`
+  display: flex;
+  align-self: center;
+`;
 
 function Header() {
   return (
     <HeaderStyled>
-      <LogoLink className="logo" to="/">
-        <Logo />
-      </LogoLink>
+      <Link className="logo" to="/"><Logo /></Link>
       <Nav>
-        <NavLinkWrap>
-          <Link to="/search?q=javascript">Search</Link>
-        </NavLinkWrap>
-        <NavLinkWrap>
-          <Link className="nav-link" to="/#how-it-works">How it works</Link>
-        </NavLinkWrap>
-        <NavLinkWrap>
-          <Link className="nav-link" to="/#about">About</Link>
-        </NavLinkWrap>
+        <Link className="nav-link" to="/search?q=javascript">Search</Link>
+        <Link className="nav-link" to="/#how-it-works">How it works</Link>
+        <Link className="nav-link" to="/#about">About</Link>
       </Nav>
     </HeaderStyled>
   );
