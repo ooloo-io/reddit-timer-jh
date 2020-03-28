@@ -6,7 +6,6 @@ export const FooterStyled = styled.footer`
   display: flex;
   padding: 0 250px;
   height: 100px;
-  justify-content: space-between;
   align-items: center;
 `;
 
@@ -20,11 +19,5 @@ export const FooterLink = styled(Link)`
   color: #636363;
   font-size: 14px;
   display: inline-block;
-`;
-
-export const FooterA = styled.a`
-  text-decoration: none;
-  color: #636363;
-  font-size: 14px;
-  display: inline-block;
+  flex: 1
 `;
