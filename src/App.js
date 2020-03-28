@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
 import 'normalize.css';
-import './App.css';
 import Home from './pages/Home';
 import Search from './pages/Search';
 import Header from './components/Header';
