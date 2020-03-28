@@ -7,7 +7,7 @@ import {
 function Header() {
   return (
     <HeaderStyled>
-      <LogoLink className="logo" to="/">
+      <LogoLink to="/">
         <Logo />
       </LogoLink>
       <Nav>
