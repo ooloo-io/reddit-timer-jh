@@ -19,9 +19,9 @@ export const FooterLink = styled(Link)`
   color: #636363;
   font-size: 14px;
   display: inline-block;
-  flex: 1
+  flex: 1;
 `;
-
 export const FooterLinkStyled = styled(FooterLink)`
+  flex: 1;
   text-align: right;
 `;
