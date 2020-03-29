@@ -5,6 +5,7 @@ import 'normalize.css';
 import Home from './pages/Home';
 import Search from './pages/Search';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -16,13 +17,12 @@ function App() {
   return (
     <Router>
       <GlobalStyle />
-      <div>
-        <Header />
-        <Switch>
-          <Route path="/search" component={Search} />
-          <Route path="/" exact component={Home} />
-        </Switch>
-      </div>
+      <Header />
+      <Switch>
+        <Route path="/search" component={Search} />
+        <Route path="/" exact component={Home} />
+      </Switch>
+      <Footer />
     </Router>
   );
 }
