@@ -21,3 +21,7 @@ export const FooterLink = styled(Link)`
   display: inline-block;
   flex: 1
 `;
+
+export const FooterLinkStyled = styled(FooterLink)`
+  text-align: right;
+`;

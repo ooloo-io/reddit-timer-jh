@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactComponent as Sign } from './sign.svg';
 import {
-  FooterStyled, LogoLink, FooterLink,
+  FooterStyled, LogoLink, FooterLink, FooterLinkStyled,
 } from './Footer.style';
 
 function Footer() {
@@ -11,7 +11,7 @@ function Footer() {
       <LogoLink to="/">
         <Sign />
       </LogoLink>
-      <FooterLink style={{ 'text-align': 'right' }} to="/terms">Terms & Privacy</FooterLink>
+      <FooterLinkStyled to="/terms">Terms & Privacy</FooterLinkStyled>
     </FooterStyled>
   );
 }
