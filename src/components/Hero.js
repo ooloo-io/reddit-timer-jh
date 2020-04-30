@@ -1,22 +1,27 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Link } from 'react-router-dom';
 import {
-  DivStyled, H1Styled, H2Styled, Button, ButtonText, SearchText, ResultThumb,
+  HeroWrapper, SplashTitle, SplashSubtitle, Button, SearchText, Theme,
 } from './Hero.style';
 import Table from './table.png';
 
+
 function Hero() {
   return (
-    <DivStyled>
-      <H1Styled>No reactions to your reddit posts?</H1Styled>
-      <H2Styled>
-        Great timing, great results! Find the best time to post on your subreddit.
-      </H2Styled>
-      <Button to="/search?q=javascript"><ButtonText>SHOW ME THE BEST TIME</ButtonText></Button>
-      <SearchText>r/javascript</SearchText>
-      <ResultThumb to="/search?q=javascript">
-        <img src={Table} alt="results-thumbnail" />
-      </ResultThumb>
-    </DivStyled>
+    <ThemeProvider theme={Theme}>
+      <HeroWrapper>
+        <SplashTitle>No reactions to your reddit posts?</SplashTitle>
+        <SplashSubtitle>
+          Great timing, great results! Find the best time to post on your subreddit.
+        </SplashSubtitle>
+        <Button to="/search?q=javascript">SHOW ME THE BEST TIME</Button>
+        <SearchText>r/javascript</SearchText>
+        <Link to="/search?q=javascript">
+          <img src={Table} alt="results-thumbnail" />
+        </Link>
+      </HeroWrapper>
+    </ThemeProvider>
   );
 }
 

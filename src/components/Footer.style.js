@@ -22,6 +22,6 @@ export const FooterLink = styled(Link)`
   flex: 1;
 `;
 export const FooterLinkStyled = styled(FooterLink)`
-  flex: 1;
+  flex: 1; /* fixes Safari related bug */
   text-align: right;
 `;
