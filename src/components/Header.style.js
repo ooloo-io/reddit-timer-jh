@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 export const HeaderStyled = styled.header`
-  padding: 0 80px;
+  padding: 0 82px 0 80px;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -20,10 +20,11 @@ export const NavLink = styled(Link)`
   font-size: 16px;
   display: inline-block;
   margin-left: 26px;
+  margin-top: 2px;
 `;
 
 export const LogoLink = styled(Link)`
-    margin-top: -2px;
+    margin-top: 0px;
     width: 150px;
     height: 36px;
     align-self: center;
